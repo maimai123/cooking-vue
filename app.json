@@ -2,7 +2,12 @@
   "pages":[
     {
       "entry":"index",
-      "title":"首页",
+      "title":"差评",
+      "cdn":{}
+    },
+    {
+      "entry":"test",
+      "title":"众测",
       "cdn":{}
     }
   ],

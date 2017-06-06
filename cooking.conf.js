@@ -9,12 +9,19 @@ cooking.set({
   dist: './dist',
   template: build.templates(),
   devServer: {
-    port: 8088,
+    port: 8080,
     publicPath: '/',
     noInfo:true,
     log:false,
     quiet:false,
-    lazy:false
+    lazy:false,
+    //跨域
+    // proxy: {
+    //   '*': {
+    //     target: 'http://www.chaping.io/Activity/Index',
+    //     secure: false,
+    //   }
+    // }
   },
 
   // production
@@ -26,7 +33,7 @@ cooking.set({
   postcss: [
     // require('...')
   ],
-  publicPath: '../',
+  publicPath: './',
   assetsPath: './static',
   urlLoaderLimit: 10000,
   extractCSS: 'static/css/[name].css',
